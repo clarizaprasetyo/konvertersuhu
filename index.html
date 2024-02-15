@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KONVERTER SUHU</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="tampilAwal()">
+    <header>
+        <h1>KONVERTER SUHU</h1>
+        <p>(Klik Reverse untuk Merubah Konversi Suhu)</p>
+    </header>
+    <main>
+        <div id="content1">
+            <form>
+                <label>Suhu dalam (&#8451;) :</label>
+                <input type="number" id="inputCelcius" placeholder="Suhu Celcius">
+                <button onclick="hapusF()">Reset</button>
+            </form>
+            <button id="revers" onclick="balikSuhu()">Reverse</button>
+            <button onclick="converterSuhuf()">Konversi</button><br><br>
+
+            <label>Suhu dalam (&#8457;) : </label>
+            <p id="hasilFarenheit"></p>
+
+            <label>*Rumus & Penjelasan</label>
+            <p id="descF"></p>
+        </div>
+
+
+        <div id="content">
+            <form>
+                <label>Suhu dalam (&#8457;) :</label>
+                <input type="number" id="inputFarenheit" placeholder="Suhu Celcius">
+                <button onclick="hapusC()">Reset</button>
+            </form>
+            <button onclick="balikSuhu1()">Reverse</button>
+            <button onclick="converterSuhuc()">Konversi</button><br><br>
+
+            <label>Suhu dalam (&#8451;) : </label>
+            <p id="hasilCelcius"></p>
+
+            <label>Rumus & Penjelasan</label>
+            <p id="descC"></p>
+        </div>
+    </main>
+    <footer>
+        <p>2024. Konverter Suhu by Clariza.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
